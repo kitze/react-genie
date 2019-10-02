@@ -1,5 +1,5 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { RevealGlobalStyles } from '../.';
 import Home from './Home';
 import "react-placeholder/lib/reactPlaceholder.css";

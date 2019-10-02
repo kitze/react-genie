@@ -1,4 +1,3 @@
-// @ts-ignore
 import React from 'react';
 import ReactPlaceholder from 'react-placeholder';
 import { AnimatedTitle, Animation } from '../.';
