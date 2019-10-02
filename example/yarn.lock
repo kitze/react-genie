@@ -3071,7 +3071,7 @@ log-symbols@^2.2.0:
   dependencies:
     chalk "^2.0.1"
 
-loose-envify@^1.0.0:
+loose-envify@^1.0.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -4126,6 +4126,15 @@ promise@8.0.3:
   dependencies:
     asap "~2.0.6"
 
+prop-types@^15.6.0:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
+
 proto-list@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
@@ -4245,6 +4254,18 @@ react-app-polyfill@^1.0.0:
     raf "3.4.1"
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
+
+react-is@^16.8.1:
+  version "16.10.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.1.tgz#0612786bf19df406502d935494f0450b40b8294f"
+  integrity sha512-BXUMf9sIOPXXZWqr7+c5SeOKJykyVr2u0UDzEf4LNGc6taGkQe1A9DFD07umCIXz45RLr9oAAwZbAJ0Pkknfaw==
+
+react-placeholder@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-placeholder/-/react-placeholder-3.0.2.tgz#08bf95b8e2ff20827d8ae8235c4cb2a3a428b292"
+  integrity sha512-PItNXiq7GO3bK8iLobGLcBeRPtxyGdtAdZ7S0zeVdAlpIlUrJy+c6igzKr6uyK74Fh/WhOL5uCNju8FVUjCJEQ==
+  dependencies:
+    prop-types "^15.6.0"
 
 readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.6, readable-stream@~2.3.3, readable-stream@~2.3.6:
   version "2.3.6"

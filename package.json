@@ -44,8 +44,6 @@
     "layout-styled-components": "^0.1.10",
     "react-animations": "^1.0.0",
     "react-intersection-observer": "^8.24.2",
-    "react-placeholder": "^3.0.2",
-    "styled-components": "^4.4.0",
-    "utils": "^0.3.1"
+    "styled-components": "^4.4.0"
   }
 }
