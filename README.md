@@ -9,6 +9,15 @@
 - 💌 [Twizzy](https://twizzy.app) - A standalone app for Twitter DM
 - 🤖 [JSUI](https://github.com/kitze/JSUI) - A powerful UI toolkit for managing JavaScript apps
 
+## Used on [sizzy.co](https://sizzy.co)
+![animation](https://i.imgur.com/0kK9C2P.gif)
+
+## CodeSandbox
+https://codesandbox.io/s/react-genie-example-8xfsc
+
+## Demo
+https://8xfsc.csb.app/
+
 
 ## Dependencies
 - styled-components
@@ -94,8 +103,3 @@ import {Reveal, Animatedtitle} from 'react-genie';
 
 The `AnimatedTitle` component will split the `children` prop word by word (so it should be a string), and animate each word with a delay in beteween.
 
-## CodeSandbox
-https://codesandbox.io/s/react-genie-example-8xfsc
-
-## Demo
-https://8xfsc.csb.app/
