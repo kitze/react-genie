@@ -22,7 +22,7 @@
 
 Just render the `RevealGlobalStyles` component anywhere, so it will add the class names for the animations:
 
-```
+```jsx
 import {RevealGlobalStyles} from 'react-genie'
 
 const App = () => {
@@ -37,14 +37,14 @@ const App = () => {
 
 
 ### Default animation:
-```
+```jsx
 <Reveal>
   <h1>The default animation is fade in</h1>
 </Reveal>
 ```
 
 ### Specifying animation using the `animation` prop:
-```
+```jsx
 import {Animation} from 'react-genie';
 
 <Reveal animation={Animation.SlideInLeft}>
@@ -58,7 +58,7 @@ Hint: you can also pass your own class name here if you have custom animations.
 The default `mode` is `wrap`, so the children element will be wrapped in an additional div.
 If you don't want that additional div, you can use `clone` or `RevealMode.Clone`.
 
-```
+```jsx
 import {Animation, RevealMode} from 'react-genie';
 
 <Reveal revealMode={RevealMode.Clone}>
