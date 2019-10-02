@@ -1,4 +1,4 @@
-# react-genie
+# 🧞‍♂️ react-genie
 
 ### 🙋‍♂️ Made by [@thekitze](https://twitter.com/thekitze)
 
