@@ -72,7 +72,7 @@ import {Reveal} from 'react-genie';
 import {Reveal, Animation} from 'react-genie';
 
 <Reveal animation={Animation.SlideInLeft}>
-  <h1>The default animation is fade in</h1>
+  <h1>This title will slide in from the left</h1>
 </Reveal>
 ```
 Hint: you can also pass your own class name here if you have custom animations.
@@ -83,10 +83,10 @@ The default `mode` is `wrap`, so the children element will be wrapped in an addi
 If you don't want that additional div, you can use `clone` or `RevealMode.Clone`.
 
 ```jsx
-import {Reval, Animation, RevealMode} from 'react-genie';
+import {Reval, RevealMode} from 'react-genie';
 
 <Reveal mode={RevealMode.Clone}>
-  <h1>The default animation is fade in</h1>
+  <h1>This h1 will be cloned instead of wrapped</h1>
 </Reveal>
 ```
 
@@ -94,7 +94,7 @@ In order for `clone` to work your element needs to accept `className`, `style`, 
 
 ### The `AnimatedTitle` component
 ```jsx
-import {Reveal, Animatedtitle} from 'react-genie';
+import {Reveal, AnimatedTitle} from 'react-genie';
 
 <AnimatedTitle>
   This sentence will animate in word by word
