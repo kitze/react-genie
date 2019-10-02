@@ -13,7 +13,6 @@ export const Reveal: React.FC<{
   animation?: string; //animation class name
   delay?: number;
   children?: any;
-  ratio?: number;
   mode?: RevealMode;
   debugName?: string;
   style?: CSSObject;
