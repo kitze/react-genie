@@ -43,6 +43,19 @@ const App = () => {
 </Reveal>
 ```
 
+## Props:
+```js
+{
+  animation?: string; //animation class name
+  delay?: number; //animation delay
+  mode?: RevealMode; //"clone" or "wrap"
+  debugName?: string; // if you specify it, you will get console logs
+  style?: CSSObject; //extra styles
+  onShowDone?: () => void; //callback after show
+}
+```
+
+
 ### Specifying animation using the `animation` prop:
 ```jsx
 import {Animation} from 'react-genie';
