@@ -61,7 +61,7 @@ If you don't want that additional div, you can use `clone` or `RevealMode.Clone`
 ```jsx
 import {Animation, RevealMode} from 'react-genie';
 
-<Reveal revealMode={RevealMode.Clone}>
+<Reveal mode={RevealMode.Clone}>
   <h1>The default animation is fade in</h1>
 </Reveal>
 ```
