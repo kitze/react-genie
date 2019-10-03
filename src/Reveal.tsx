@@ -17,6 +17,7 @@ export const Reveal: React.FC<{
   debugName?: string;
   style?: CSSObject;
   onShowDone?: () => void;
+  wait?: boolean;
 }> = ({
   children,
   onShowDone,
@@ -25,6 +26,7 @@ export const Reveal: React.FC<{
   delay = 0,
   debugName,
   style,
+  wait,
 }) => {
   const [ref, inView] = useInView({ triggerOnce: true });
   const [show, setShow] = useState(false);
@@ -33,7 +35,7 @@ export const Reveal: React.FC<{
     if (debugName) {
       console.log('Debugging', debugName);
     }
-    if (inView) {
+    if (inView && wait !== true) {
       if (debugName) {
         console.log(`${debugName} is in view`);
       }
@@ -45,16 +47,20 @@ export const Reveal: React.FC<{
         }
       }, delay);
     }
-  }, [inView]);
+  }, [inView, wait]);
+
+  let className = show
+    ? animation
+    : children.props
+    ? children.props.className
+    : '';
+
+  let visibility = (show ? 'visible' : 'hidden') as VisibilityProperty;
 
   let extraProps = {
-    className: show
-      ? animation
-      : children.props
-      ? children.props.className
-      : '',
+    className,
     style: {
-      visibility: (show ? 'visible' : 'hidden') as VisibilityProperty,
+      visibility,
       ...style,
     },
     ref,

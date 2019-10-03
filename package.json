@@ -10,7 +10,8 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --env=jsdom"
+    "test": "tsdx test --env=jsdom",
+    "example": "cd example && yarn start"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -44,6 +45,7 @@
     "layout-styled-components": "^0.1.10",
     "react-animations": "^1.0.0",
     "react-intersection-observer": "^8.24.2",
+    "reveal": "^0.0.4",
     "styled-components": "^4.4.0"
   }
 }
