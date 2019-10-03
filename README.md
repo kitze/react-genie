@@ -83,7 +83,7 @@ The default `mode` is `wrap`, so the children element will be wrapped in an addi
 If you don't want that additional div, you can use `clone` or `RevealMode.Clone`.
 
 ```jsx
-import {Reval, RevealMode} from 'react-genie';
+import {Reveal, RevealMode} from 'react-genie';
 
 <Reveal mode={RevealMode.Clone}>
   <h1>This h1 will be cloned instead of wrapped</h1>
