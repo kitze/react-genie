@@ -1,8 +1,8 @@
 import { VisibilityProperty } from 'csstype';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Animation } from './reveal-animations';
 import { CSSObject } from 'styled-components';
+import { Animation } from './reveal-animations';
 
 export enum RevealMode {
   Clone,
@@ -66,11 +66,9 @@ export const Reveal: React.FC<{
     ref,
   };
 
-  const cloned = React.cloneElement(children, extraProps);
+  if (mode === RevealMode.Clone) {
+    return React.cloneElement(children, extraProps);
+  }
 
-  return mode === RevealMode.Clone ? (
-    cloned
-  ) : (
-    <div {...extraProps}>{children}</div>
-  );
+  return <div {...extraProps}>{children}</div>;
 };

@@ -1,8 +1,6 @@
 import React from 'react';
-import { Reveal } from './Reveal';
-
-//styles
 import * as L from 'layout-styled-components';
+import { Reveal } from './Reveal';
 
 export const AnimatedTitle: React.FC<
   {
