@@ -57,12 +57,12 @@ import {Reveal} from 'react-genie';
 ## Props:
 ```js
 {
-  animation?: string; //animation class name
-  delay?: number; //animation delay
-  mode?: RevealMode; //"clone" or "wrap"
+  animation?: string; // animation class name
+  delay?: number; // animation delay
+  mode?: RevealMode; // "clone" or "wrap"
   debugName?: string; // if you specify it, you will get console logs
-  style?: CSSObject; //extra styles
-  onShowDone?: () => void; //callback after show
+  style?: CSSObject; // extra styles
+  onShowDone?: () => void; // callback after show
 }
 ```
 
@@ -101,5 +101,4 @@ import {Reveal, AnimatedTitle} from 'react-genie';
 </AnimatedTitle>
 ```
 
-The `AnimatedTitle` component will split the `children` prop word by word (so it should be a string), and animate each word with a delay in beteween.
-
+The `AnimatedTitle` component will split the `children` prop word by word (so it should be a string), and animate each word with a delay in between.
