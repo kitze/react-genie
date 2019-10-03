@@ -6,10 +6,9 @@ import {
   RevealChildren,
   RevealElements,
   Animation,
-  RevealProvider,
 } from '../.';
+
 import * as L from 'layout-styled-components';
-import { Grid } from 'layout-styled-components';
 
 export const Home = () => {
   let placeholder = (
@@ -24,10 +23,8 @@ export const Home = () => {
     </ReactPlaceholder>
   );
 
-  const isMobile = window.matchMedia('(max-width: 700px)').matches;
-
   return (
-    <L.Vertical className="wtf" center spaceAll={100}>
+    <L.Vertical center spaceAll={100}>
       <AnimatedTitle style={{ fontSize: 45 }}>
         👋️ Hello world, I'm react-genie!
       </AnimatedTitle>
@@ -87,6 +84,7 @@ export const Home = () => {
             src={`https://picsum.photos/302/300`}
             alt=""
           />
+          e
         </div>
         <div>
           <h3>Image 3</h3>

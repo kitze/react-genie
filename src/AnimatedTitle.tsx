@@ -1,5 +1,5 @@
 import React from 'react';
-import { Reveal } from './reveal';
+import { Reveal } from './Reveal';
 
 //styles
 import * as L from 'layout-styled-components';

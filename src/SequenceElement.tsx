@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { RevealProviderProps } from 'RevealProvider';
-import { Reveal } from './reveal';
+import { Reveal } from './Reveal';
 import { RevealContext } from './reveal-context';
 
 export const SequenceElement: React.FC<
