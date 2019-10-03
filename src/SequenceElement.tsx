@@ -1,18 +1,30 @@
 import React, { useContext } from 'react';
+import { RevealProviderProps } from 'RevealProvider';
 import { Reveal } from './reveal';
 import { RevealContext } from './reveal-context';
 
-export const SequenceElement: React.FC<{
-  children: any;
-  index: number;
-}> = ({ index, children }) => {
+export const SequenceElement: React.FC<
+  {
+    children: any;
+    index: number;
+  } & RevealProviderProps
+> = ({ index, children, ...rest }) => {
+  const revealContext = useContext(RevealContext);
+
+  const config = {
+    ...revealContext,
+    ...rest,
+  };
+
   const {
-    lastIndex,
     delayBetween,
     initialDelay,
     disableDelay,
+    mode,
+    animation,
+    lastIndex,
     setLastIndex,
-  } = useContext(RevealContext);
+  } = config;
 
   const wait = index > lastIndex;
   const isFirstElement = index === 0;
@@ -26,6 +38,8 @@ export const SequenceElement: React.FC<{
   return (
     <Reveal
       wait={wait}
+      mode={mode}
+      animation={animation}
       onShowDone={() => setLastIndex(index + 1)}
       delay={disableDelay ? 0 : finalDelay}
       key={index}

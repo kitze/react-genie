@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { RevealMode } from 'Reveal';
 import { RevealContext } from './reveal-context';
 
 export type RevealProviderProps = {
   delayBetween?: number;
   initialDelay?: number;
   disableDelay?: boolean;
+  mode?: RevealMode;
+  animation?: string;
 };
 
 export const RevealProvider: React.FC<RevealProviderProps> = ({
