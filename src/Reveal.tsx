@@ -1,7 +1,6 @@
 import { VisibilityProperty } from 'csstype';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { CSSObject } from 'styled-components';
 import { Animation } from './reveal-animations';
 
 export enum RevealMode {
@@ -15,7 +14,7 @@ export const Reveal: React.FC<{
   children?: any;
   mode?: RevealMode;
   debugName?: string;
-  style?: CSSObject;
+  style?: React.CSSProperties;
   onShowDone?: () => void;
   wait?: boolean;
 }> = ({

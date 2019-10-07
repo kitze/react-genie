@@ -42,7 +42,6 @@
   },
   "dependencies": {
     "@types/styled-components": "^4.1.19",
-    "layout-styled-components": "^0.1.10",
     "react-animations": "^1.0.0",
     "react-intersection-observer": "^8.24.2",
     "reveal": "^0.0.4",
