@@ -49,6 +49,22 @@ export const Home = () => {
         <h1>☁️ Fade In</h1>
         {placeholder}
       </Reveal>
+      <Reveal animation={Animation.FadeInLeft}>
+        <h1>☁️ Fade In From The Left</h1>
+        {placeholder}
+      </Reveal>
+      <Reveal animation={Animation.FadeInRight}>
+        <h1>☁️ Fade In From The Right</h1>
+        {placeholder}
+      </Reveal>
+      <Reveal animation={Animation.BounceInLeft}>
+        <h1>🏀 Bounce In From The Left</h1>
+        {placeholder}
+      </Reveal>
+      <Reveal animation={Animation.BounceInRight}>
+        <h1>🏀 Bounce In From The Right</h1>
+        {placeholder}
+      </Reveal>
 
       <L.Grid gap={20} cols={3}>
         <RevealElements
