@@ -1,6 +1,6 @@
 {
   "name": "react-genie",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "module": "dist/react-genie.esm.js",
   "typings": "dist/index.d.ts",
