@@ -16,6 +16,7 @@ export const Reveal: React.FC<{
   debugName?: string;
   style?: React.CSSProperties;
   onShowDone?: () => void;
+  onEnterView?: () => void;
   wait?: boolean;
 }> = ({
   children,
@@ -26,6 +27,7 @@ export const Reveal: React.FC<{
   debugName,
   style,
   wait,
+  onEnterView,
 }) => {
   const [ref, inView] = useInView({ triggerOnce: true });
   const [show, setShow] = useState(false);
@@ -34,17 +36,20 @@ export const Reveal: React.FC<{
     if (debugName) {
       console.log('Debugging', debugName);
     }
-    if (inView && wait !== true) {
-      if (debugName) {
-        console.log(`${debugName} is in view`);
-      }
-      setTimeout(() => {
-        setShow(true);
-        onShowDone && onShowDone();
+    if (inView) {
+      onEnterView && onEnterView();
+      if (wait !== true) {
         if (debugName) {
-          console.log(`showing ${debugName}`);
+          console.log(`${debugName} is in view`);
         }
-      }, delay);
+        setTimeout(() => {
+          setShow(true);
+          onShowDone && onShowDone();
+          if (debugName) {
+            console.log(`showing ${debugName}`);
+          }
+        }, delay);
+      }
     }
   }, [inView, wait]);
 

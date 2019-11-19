@@ -24,11 +24,15 @@ export const SequenceElement: React.FC<
     animation,
     lastIndex,
     setLastIndex,
+    firstIndex,
+    setFirstIndex,
   } = config;
 
-  const wait = index > lastIndex;
+  const shouldWait = firstIndex === 0;
+  const wait = shouldWait ? index > lastIndex : false;
   const isFirstElement = index === 0;
   const firstElementDelay = initialDelay !== undefined ? initialDelay : 0;
+  const shouldDisableDelay = disableDelay || firstIndex !== 0;
   const finalDelay = disableDelay
     ? 0
     : isFirstElement
@@ -41,7 +45,12 @@ export const SequenceElement: React.FC<
       mode={mode}
       animation={animation}
       onShowDone={() => setLastIndex(index + 1)}
-      delay={disableDelay ? 0 : finalDelay}
+      onEnterView={() => {
+        if (firstIndex === null) {
+          setFirstIndex(index);
+        }
+      }}
+      delay={shouldDisableDelay ? 0 : finalDelay}
       key={index}
     >
       {children}

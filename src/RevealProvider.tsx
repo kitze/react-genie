@@ -17,11 +17,14 @@ export const RevealProvider: React.FC<RevealProviderProps> = ({
   disableDelay = false,
 }) => {
   const [lastIndex, setLastIndex] = useState<number>(0);
+  const [firstIndex, setFirstIndex] = useState<number | null>(null);
 
   return (
     <RevealContext.Provider
       value={{
         lastIndex,
+        firstIndex,
+        setFirstIndex,
         setLastIndex,
         delayBetween,
         initialDelay,
