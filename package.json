@@ -41,8 +41,6 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "react-animations": "^1.0.0",
-    "react-intersection-observer": "^8.24.2",
-    "reveal": "^0.0.4"
+    "react-intersection-observer": "^8.24.2"
   }
 }
