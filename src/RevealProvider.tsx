@@ -15,6 +15,7 @@ export const RevealProvider: React.FC<RevealProviderProps> = ({
   delayBetween = 200,
   initialDelay = 0,
   disableDelay = false,
+  animation,
 }) => {
   const [lastIndex, setLastIndex] = useState<number>(0);
   const [firstIndex, setFirstIndex] = useState<number | null>(null);
@@ -29,6 +30,7 @@ export const RevealProvider: React.FC<RevealProviderProps> = ({
         delayBetween,
         initialDelay,
         disableDelay,
+        animation,
       }}
     >
       {children}
