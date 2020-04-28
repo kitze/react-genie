@@ -1,7 +1,6 @@
 import { VisibilityProperty } from 'csstype';
 import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { Animation } from './reveal-animations';
 
 export enum RevealMode {
   Clone,
@@ -9,7 +8,7 @@ export enum RevealMode {
 }
 
 export const Reveal: React.FC<{
-  animation?: string; //animation class name
+  animation: string; //animation class name
   delay?: number;
   children?: any;
   mode?: RevealMode;
@@ -22,7 +21,7 @@ export const Reveal: React.FC<{
   children,
   onShowDone,
   mode = RevealMode.Wrap,
-  animation = Animation.FadeInUp,
+  animation,
   delay = 0,
   debugName,
   style,

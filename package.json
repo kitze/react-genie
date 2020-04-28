@@ -41,10 +41,8 @@
     "typescript": "^3.6.3"
   },
   "dependencies": {
-    "@types/styled-components": "^4.1.19",
     "react-animations": "^1.0.0",
     "react-intersection-observer": "^8.24.2",
-    "reveal": "^0.0.4",
-    "styled-components": "^4.4.0"
+    "reveal": "^0.0.4"
   }
 }
