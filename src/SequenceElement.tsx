@@ -1,14 +1,13 @@
-import React, { useContext } from 'react';
+import React, { CSSProperties, useContext } from 'react';
 import { RevealProviderProps } from 'RevealProvider';
 import { Reveal } from './Reveal';
 import { RevealContext } from './reveal-context';
 
-export const SequenceElement: React.FC<
-  {
-    children: any;
-    index: number;
-  } & RevealProviderProps
-> = ({ index, children, ...rest }) => {
+export const SequenceElement: React.FC<{
+  children: any;
+  index: number;
+  style: CSSProperties;
+} & RevealProviderProps> = ({ index, children, style, ...rest }) => {
   const revealContext = useContext(RevealContext);
 
   const config = {
@@ -51,6 +50,7 @@ export const SequenceElement: React.FC<
         }
       }}
       delay={shouldDisableDelay ? 0 : finalDelay}
+      style={style}
       key={index}
     >
       {children}
