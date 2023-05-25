@@ -1,13 +1,16 @@
 # 🧞‍♂️ react-genie
 
-### 🙋‍♂️ Made by [@thekitze](https://twitter.com/thekitze)
+### 🙋‍♂️ Made by [@thekitze](https://twitter.com/thekitze)  
 
 ### Other projects:
-
-- 💻 [Sizzy](https://sizzy.co) - A browser for developers and designers
+- 💻 [Sizzy](https://sizzy.co) - A browser for designers and developers, focused on responsive design
 - 🏫 [React Academy](https://reactacademy.io) - Interactive React and GraphQL workshops
-- 💌 [Twizzy](https://twizzy.app) - A standalone app for Twitter DM
+- 🔮 [Glink](https://glink.so) - Changelogs, Roadmap, User Requests
+- 🐶 [Benji](https://benji.so) - Ultimate wellness and productivity platform
 - 🤖 [JSUI](https://github.com/kitze/JSUI) - A powerful UI toolkit for managing JavaScript apps
+- 📹 [YouTube Vlog](https://youtube.com/kitze) - Follow my journey
+
+<a href="https://zerotoshipped.com"><img style="width:450px" src="https://i.ibb.co/WKQPDv5/twitter-image.jpg" alt="Zero To Shipped"></a>
 
 ## Used on [sizzy.co](https://sizzy.co)
 ![animation](https://i.imgur.com/0kK9C2P.gif)
