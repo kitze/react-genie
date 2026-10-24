@@ -33,7 +33,7 @@
     "@types/react-dom": "^16.9.1",
     "husky": "^3.0.8",
     "prettier": "^1.18.2",
-    "pretty-quick": "^1.11.1",
+    "pretty-quick": "^2.0.2",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "tsdx": "^0.9.3",
