@@ -37,7 +37,7 @@
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "tsdx": "^0.9.3",
-    "tslib": "^1.10.0",
+    "tslib": "^2.8.1",
     "typescript": "^3.6.3"
   },
   "dependencies": {
